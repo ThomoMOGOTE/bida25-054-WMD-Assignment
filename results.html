@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Results — BAA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar" aria-label="Dashboard navigation">
+      <div class="sidebar-logo">
+        <img src="img/botswana-athletics-association.jpg" alt="BAA Logo" />
+      </div>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profiles</a>
+        <a href="my-athletes.html">My Athletes</a>
+        <a href="registrations.html">Registrations</a>
+        <a href="results.html" class="active-red">Results</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="settings.html">Settings</a>
+        <a href="login.html">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-main">
+      <h1 style="font-size:1.8rem;font-weight:900;margin-bottom:0.5rem;text-align:center;">Results</h1>
+      <p style="text-align:center;color:var(--grey-text);margin-bottom:1.5rem;">View athlete performance results</p>
+
+      <!-- FILTERS -->
+      <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-bottom:1rem;">
+        <select style="border:1px solid #e0e0e0;border-radius:4px;padding:0.4rem 0.7rem;font-size:0.82rem;outline:none;">
+          <option>All Events</option>
+          <option>National Championships</option>
+          <option>Central Districts Meet</option>
+        </select>
+        <select style="border:1px solid #e0e0e0;border-radius:4px;padding:0.4rem 0.7rem;font-size:0.82rem;outline:none;">
+          <option>All Categories</option>
+          <option>Senior Men</option>
+          <option>Senior Women</option>
+          <option>Junior Men</option>
+        </select>
+        <select style="border:1px solid #e0e0e0;border-radius:4px;padding:0.4rem 0.7rem;font-size:0.82rem;outline:none;">
+          <option>All Dates</option>
+          <option>This Month</option>
+          <option>This Year</option>
+        </select>
+      </div>
+
+      <div class="dash-card">
+        <div class="dash-card-header">Results</div>
+        <table class="dash-table">
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Athlete</th>
+              <th>Category</th>
+              <th>Time</th>
+              <th>Position</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>100m</td>
+              <td>Sethunya Majama</td>
+              <td>Senior Women</td>
+              <td>11.3s</td>
+              <td>1</td>
+              <td>14 July 2026</td>
+            </tr>
+            <tr>
+              <td>200m</td>
+              <td>Itumeleng Thomas</td>
+              <td>Senior Men</td>
+              <td>20.8s</td>
+              <td>2</td>
+              <td>14 July 2026</td>
+            </tr>
+            <tr>
+              <td>400m</td>
+              <td>Lsungo Scotch</td>
+              <td>Senior Men</td>
+              <td>45.4s</td>
+              <td>3</td>
+              <td>12 July 2026</td>
+            </tr>
+            <tr>
+              <td>Long Jump</td>
+              <td>Sethunya Majama</td>
+              <td>Senior Women</td>
+              <td>7.3m</td>
+              <td>1</td>
+              <td>13 July 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+    <!-- FOOTER -->
+  <footer class="baa-footer">
+    <div class="footer-partners">
+      <span class="footer-partners-label">Our Partners</span>
+      <a href="https://www.debswana.com" target="_blank" rel="noopener" class="partner-link" title="Debswana"><span class="partner-text">Debswana</span></a>
+      <a href="https://www.btc.bw" target="_blank" rel="noopener" class="partner-link" title="BTC"><span class="partner-text">BTC</span></a>
+      <a href="https://www.worldathletics.org" target="_blank" rel="noopener" class="partner-link" title="World Athletics"><span class="partner-text">World Athletics</span></a>
+      <a href="https://www.bnsc.gov.bw" target="_blank" rel="noopener" class="partner-link" title="BNSC"><span class="partner-text">BNSC</span></a>
+      <a href="https://www.bocbotsoc.org.bw" target="_blank" rel="noopener" class="partner-link" title="BOC"><span class="partner-text">BOC</span></a>
+    </div>
+    <div class="footer-links-row">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="news.html">News</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="https://www.worldathletics.org" target="_blank" rel="noopener">World Athletics</a>
+      <a href="https://www.bnsc.gov.bw" target="_blank" rel="noopener">BNSC</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Copyright</a>
+    </div>
+    <div class="footer-copy">&copy; Botswana Athletics Association. All rights reserved.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
